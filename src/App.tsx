@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from './components/Button';
+import { Button } from './components/Button/Button';
 import { Image } from './components/Image';
 
 /**
@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
   axe(React, ReactDOM, 1000);
 }
 
-function App() {
+const App = () => {
   return (
     <div>
       <Image />
@@ -45,6 +45,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

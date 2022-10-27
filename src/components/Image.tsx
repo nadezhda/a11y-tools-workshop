@@ -1,4 +1,4 @@
-import React, { FunctionComponent, HTMLAttributes } from 'react';
+import { FunctionComponent, HTMLAttributes } from 'react';
 import myImage from './image.png';
 
 interface ImageProps extends HTMLAttributes<HTMLImageElement> {
