@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { axe, toHaveNoViolations } from 'jest-axe';
+import ReactDOMServer from 'react-dom/server';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+expect.extend(toHaveNoViolations);
+
+it('should demonstrate this matcher`s usage with react', async () => {
+  const html = ReactDOMServer.renderToString(<App />);
+  const results = await axe(html);
+  expect(results).toHaveNoViolations();
 });

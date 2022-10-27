@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://yle.fi/",
+    {
+      "url": "https://yle.fi/",
+      "timeout": 50000,
+      "actions": [
+        "screen capture pa11y-captures/captures-yle-home.png",
+        "navigate to https://yle.fi/saa/suomi/helsinki/",
+        "screen capture pa11y-captures/captures-yle-see.png"
+      ]
+    }
+  ]
+}

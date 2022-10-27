@@ -1,6 +1,7 @@
 {
     "env": {
         "browser": true,
+        "jest": true,
         "es2021": true
     },
     "extends": [
@@ -26,7 +27,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
+        "react"
         // "jsx-a11y"
     ],
     "rules": {
@@ -53,6 +54,13 @@
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"],
         "@typescript-eslint/no-var-requires": 0
+        // "jsx-a11y/alt-text": [ 2, {
+        //     "elements": [ "img", "object", "area", "input[type=\"image\"]" ],
+        //     "img": ["Image"],
+        //     "object": ["Object"],
+        //     "area": ["Area"],
+        //     "input[type=\"image\"]": ["InputImage"]
+        //   }]
 
     }
 }
